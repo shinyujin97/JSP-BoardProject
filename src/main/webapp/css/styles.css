@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* styles.css */
+
+/* 전체 화면 가운데 정렬 */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* 도서 정보 컨테이너 */
+.book-container {
+	display: flex;
+	flex-direction: row; /* 이미지와 텍스트를 가로로 나열 */
+	align-items: center; /* 세로 가운데 정렬 */
+	background-color: #f4f4f4;
+	padding: 20px;
+	border-radius: 10px;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	max-width: 90%; /* 최대 너비 설정 */
+}
+
+/* 책 이미지 스타일 */
+.book img {
+	width: 400px; /* 이미지 너비 설정 */
+	height: auto;
+}
+
+/* 도서 정보 스타일 */
+.book-info {
+	text-align: left; /* 텍스트는 왼쪽 정렬 */
+	flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
+	padding-left: 20px; /* 텍스트 왼쪽 간격 설정 */
+}
+
+.author-info {
+	margin-top: 20px;
+	text-align: left;
+}
+
+h4 {
+	margin-top: 10px;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+/* 다른 작품 이미지 스타일 */
+.other-books img {
+	width: 100px;
+	height: auto;
+	margin-right: 10px;
+}
+
+/* 텍스트 줄 바꿈 설정 */
+p {
+	white-space: normal; /* 텍스트 줄 바꿈을 허용 */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%; /* 텍스트 최대 너비 설정 */
+}
+

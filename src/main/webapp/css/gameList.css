@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+        
+        .category-item {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .category-image {
+            max-width: 100%;
+            height: auto;
+        }
+ 

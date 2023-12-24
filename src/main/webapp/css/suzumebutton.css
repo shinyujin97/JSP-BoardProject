@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.button-container {
+  position: relative; /* 부모 요소에 position 속성 추가 */
+}
+
+.button {
+  /* 다른 스타일 속성들... */
+  position: absolute; /* 위치 지정 */
+  left:815px;
+  top: 467px; /* 원하는 위치만큼 위로 이동 (음수 값 사용) */
+}
+
+
+.button {
+  height: 60px; /* 55 */
+  width: 323px; /* 175 */
+  margin: auto;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 50ms ease;
+  background: linear-gradient(90deg, #fdec53, #f441a5, #b81fff, #5f03f4);
+  color: #ffffff;
+  text-shadow: rgba(140, 0, 255, 0.9) 0px 0px 20px;
+  background-size: 400%;
+  animation: welcome 0.5s ease 0s 1 normal forwards;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(230, 219, 67, 0.9);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(224, 178, 78, 0.9);
+  box-shadow: 0px 0px 15px 0px rgba(212, 133, 109, 0.9);
+  animation: animate 8s ease infinite;
+  transition: box-shadow, 0.4s;
+  border: none;
+  font-size: 19px;
+  transform: scale(1.05, 1.05);
+  background: linear-gradient(90deg, #fdec53, #cc5e4a, #dfad41, #fdec53);
+  background-size: 400%;
+  animation: animate 7s cubic-bezier(0.75, 0.75, 0.75, 0.75) infinite,
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}

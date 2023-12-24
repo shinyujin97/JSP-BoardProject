@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 최신영화 리스트 스타일 */
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 각 영화 아이템 스타일 */
+.movie-list li {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 이미지 스타일 */
+.movie-list li .img img {
+    max-height: 600px; 
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* 제목 스타일 */
+.movie-list li .title {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+
