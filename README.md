@@ -16,6 +16,6 @@
 |-------|
 |<img src="https://github.com/shinyujin97/JSP-BoardProject/assets/79908872/eb51db32-c03c-48e3-a2e9-04b260f1c067" width="800" height="600">|
 
-|`금액 상세페이지`|
+|`영화 상세페이지`|
 |-------|
 |<img src="https://github.com/shinyujin97/JSP-BoardProject/assets/79908872/8701f0ab-a125-447f-bab7-80fda64d8253" width="800" height="600">|
