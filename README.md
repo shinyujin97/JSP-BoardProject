@@ -1,1 +1,1 @@
-# JSP-BoardProject
+## 영화/도서/게임 예매 사이트
