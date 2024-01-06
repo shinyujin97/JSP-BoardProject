@@ -15,8 +15,8 @@ public class DB_Test {
 			
 		try {
 			String dbURL = "jdbc:oracle:thin:@127.0.0.1:1521:orcl"; //오라클 서버
-			String dbID = "Luser"; //계정
-			String dbPassword = "1234"; //비밀번호
+			String dbID = ""; //계정
+			String dbPassword = ""; //비밀번호
 			Class.forName("oracle.jdbc.driver.OracleDriver"); //오라클에 접속을 도와주는 라이브러리 
 			
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
